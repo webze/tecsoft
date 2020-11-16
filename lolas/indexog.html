@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DJ RAUL</title>
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="estilos.css">
+	<script type="text/javascript">
+		function validar() {
+			var usuario = document.getElementById("usuario").value;
+			var Contraseña = document.getElementById("pass").value;
+
+			if(usuario=="DjRaulMix" && Contraseña=="59d864dd")
+			{
+
+				alert("Correcto!");
+				top.location.href = "PARATU/index.html";
+				
+			}
+			else
+			{
+				alert("algo anda mal... x)");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form class="formulario">
+    
+    <h1>SOLO ADMINISTRADORES</h1>
+     <div class="contenedor">
+         
+         <div class="input-contenedor">
+         <i class="fas fa-envelope icon"></i>
+
+         <input type="text" placeholder="Cuenta" name="usuario" id="usuario">
+         </div>
+
+         <div class="input-contenedor">
+         <i class="fas fa-key icon"></i>
+
+         <input type="password" placeholder="Contraseña" name="pass" id="pass">
+         </div>
+
+         
+      	<input type="button" name="btnvertical" id="btnvertical" onclick="validar()" value="verificar" style="color:white;background-color:#b3e0ff;font-size:160%;text-align:center;width: 100%">
+     
+    </form>
+
+
+	
+
+</body>
+</html>
